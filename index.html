@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMind - Crafting Unforgettable Experiences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Sanjay The EventManager</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section-transition">
+            <h1>Crafting Unforgettable Experiences</h1>
+            <p>Where Vision Meets Execution</p>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
+        </section>
+
+        <section id="services" class="services section-transition">
+            <h2>Our Expertise</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Corporate Events</h3>
+                    <p>Elevate your brand with our meticulously planned corporate gatherings.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Weddings</h3>
+                    <p>Turn your dream wedding into a breathtaking reality with our expert touch.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Concerts & Festivals</h3>
+                    <p>Create unforgettable memories with our large-scale event expertise.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Social Gatherings</h3>
+                    <p>From birthdays to graduations, we make every moment special.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section-transition">
+            <h2>Our Success Stories</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="1.jpg" alt="Event 1">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Gala</h3>
+                        <p>An elegant evening for 500 executives</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="2.jpg" alt="Event 2">
+                    <div class="portfolio-overlay">
+                        <h3>Beachside Wedding</h3>
+                        <p>A romantic celebration for 200 guests</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="3.jpg" alt="Event 3">
+                    <div class="portfolio-overlay">
+                        <h3>Summer Music Festival</h3>
+                        <p>A three-day event with 20,000 attendees</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section-transition">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"EventMind turned our vision into reality. The attention to detail was impeccable!"</p>
+                        <cite>- Sarah J., Corporate Client</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Our wedding was absolutely perfect. We couldn't have asked for a better team!"</p>
+                        <cite>- Mark & Emily, Newlyweds</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The festival was a huge success. EventMind's expertise made all the difference."</p>
+                        <cite>- Alex R., Event Organizer</cite>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-control" id="prevTestimonial" aria-label="Previous testimonial">&lt;</button>
+                <div class="testimonial-indicators"></div>
+                <button class="testimonial-control" id="nextTestimonial" aria-label="Next testimonial">&gt;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-transition">
+            <h2>Let's Create Something Amazing</h2>
+            <form id="contact-form" action="https://formspree.io/f/mkgwevjj" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="event-type" required="">
+                    <option value="">Select Event Type</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Concert/Festival">Concert/Festival</option>
+                    <option value="Social">Social Gathering</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your event vision" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About EventMind</h3>
+                <p>We are passionate about creating extraordinary events that leave lasting impressions. With our
+                    expertise and creativity, we turn your visions into unforgettable experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EventMind. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
